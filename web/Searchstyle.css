@@ -1,0 +1,143 @@
+
+/*img*/
+/*{
+max-width: 300px;
+max-height: 160px;
+centering the image vertically 2
+display:block;
+margin: auto auto;
+}*/
+        #tfheader{
+            margin-right: 25%;
+            width: 25%;
+            height: 60px;
+            /*background-color:#c3dfef;*/
+            float: right;
+	}
+	#tfnewsearch{
+            float: right;
+           padding:20px;
+	}
+	.tftextinput{
+		/*margin: 0;*/
+                margin-top: 0px;
+		padding: 4px 5px;
+                padding-right: 5px;
+                /*padding: 5px 5px;*/
+                padding-left: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:3px solid #0076a3;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+                border-bottom-right-radius: 5px 5px;
+                border-top-right-radius: 5px 5px;
+                
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+                border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+                border-bottom-right-radius: 5px 5px;
+                border-top-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+ /* menu bar css from here*/
+ 
+/*#menu, #menu ul {
+    margin from top
+    margin:10px auto;
+    this is   box width
+   padding:10px; 
+    border-right: 1px solid #ccc;
+    box width
+}*/
+#firstl,#secondl,#fourthl,#thirdl
+{
+ z-index: 1000;
+ border-right:2px solid #ccc;
+text-align: center;
+}
+#firstl,#secondl,#fourthl
+{
+  width: 16%;
+ }
+#thirdl
+{
+  width: 20%;
+}
+#fifthl
+{ z-index: 1000;
+ text-align: center;
+ width: 20%;
+}
+
+#menu {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: inline-block;
+    width: 60%;
+    /*list-style:none;*/
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 10px;
+}
+ul.dropdown { position: relative;  border-radius:10px; z-index:9999}
+#menu li {
+    float: left;
+    position: relative;
+    list-style: none;
+}
+#menu > li:hover > ul {
+    display:block;
+}
+#menu > li > ul {
+    background-color: red;
+    display: none;
+    position: absolute;
+}
+#menu li a {
+    display:block;
+    padding:10px 10px;
+    text-decoration:none;
+    font-weight:bold;
+    white-space: nowrap;
+}
+#menu li a:hover {
+    color:#c00;
+}
+/*slide show images */
+#slideShowImages
+{
+    margin-right: 35%;
+    margin-left: 40%;
+}
+img
+{
+    width: 560px;
+    height: 400px;
+}
+

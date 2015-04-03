@@ -1,0 +1,22 @@
+
+#itemprice
+{
+font-weight: bold;
+color: red;
+}
+
+#firstdivision
+{
+ width: 350px;
+ height: 350px;
+ margin-top: 5%;
+ //background-color: red;
+ margin-left:40px;
+ text-align: center;
+//margin between divisions
+ float: left;
+ margin-right:40px;
+/*displays each division side by side*/
+display: inline-block;
+vertical-align: middle
+}

@@ -1,0 +1,38 @@
+
+#menu, #menu ul {
+    /*margin from top*/
+    margin:10px auto;
+    padding:10px;
+    /*box width*/
+}
+#menu {
+    margin-left: 40%;
+    display: inline-block;
+    min-width: 1000px;
+    /*list-style:none;*/
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+#menu li {
+    float: left;
+    position: relative;
+    list-style: none;
+}
+#menu > li:hover > ul {
+    display: block;
+}
+#menu > li > ul {
+    display: none;
+    position: absolute;
+}
+#menu li a {
+    display:block;
+    padding:10px 10px;
+    text-decoration:none;
+    font-weight:bold;
+    white-space: nowrap;
+}
+#menu li a:hover {
+    color:#c00;
+}
