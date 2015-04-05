@@ -9,6 +9,7 @@ package Place;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -33,21 +34,36 @@ public class CategoryServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+     // System.out.println("MAMAMA");
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         
     String category = request.getParameter("category");
-        System.out.println(category);
+  //String   subcategory = request.getParameter("subcategory");
+
+//        System.out.println(category+"--");
         ArrayList<Item> al = TotalItems.totalItems();
-        ArrayList<Item> result = new ArrayList<>();
+        String result = "";
         for(Item it :al)
         {
+       if(it!=null)
+       {
+     //       System.out.println(it.getSubcategory().split("-")[0]+"--");
+   //  System.out.println(it.getCategory()+"+++++"+category+"---"+it.getCategory().equals(category));
         if(it.getCategory().equals(category))
         {
-            result.add(it);
+            
+            result+= it.toString()+"SQQS";
+        }
+        else if(it.getSubcategory().split("-")[0].equalsIgnoreCase(category))
+                {
+//                    System.out.println(it);    
+              result+= it.toString()+"SQQS";                  
+                }
         }
         }
-                  out.println(result);
+      //    System.out.println(result.split("SQQS")[0]);
+   out.println(result);
    
 //        try (PrintWriter out = response.getWriter()) {
 //            /* TODO output your page here. You may use following sample code. */

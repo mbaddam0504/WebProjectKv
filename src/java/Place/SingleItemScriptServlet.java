@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Place;
 
 import java.io.IOException;
@@ -20,8 +19,8 @@ import javax.servlet.http.HttpSession;
  *
  * @author S519459
  */
-@WebServlet(name = "ItemServlet", urlPatterns = {"/ItemServlet"})
-public class ItemServlet extends HttpServlet {
+@WebServlet(name = "SingleItemScriptServlet", urlPatterns = {"/SingleItemScriptServlet"})
+public class SingleItemScriptServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,41 +33,35 @@ public class ItemServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-HttpSession session = request.getSession();
-ArrayList<Item> itemsObtainedFromSearch = new ArrayList<Item>();
-String nameFromSearch = request.getParameter("search");
-ArrayList<Item> totalItems = TotalItems.totalItems();
-session.setAttribute("items", totalItems);
-for(Item item :totalItems)
-{
-String[] arr = item.getShortDescription().split(" ");
-int count=0;
-for(String el :arr)
-{
- //  System.out.println(nameFromSearch+" short desc element is "+el+"****"+nameFromSearch.equalsIgnoreCase(el));
-if(nameFromSearch.equalsIgnoreCase(el))
-    count++;
-}
-if(count>0)
-{
 
-    itemsObtainedFromSearch.add(item);//Item sorted 
- String[] longdesc = item.getLongDescription().split("11");
- if(longdesc.length<=1)
- {   System.out.println(" *****+++++++");
-    request.setAttribute("longdesc", item.getLongDescription());
- }
-   else
-    request.setAttribute("longdesc", longdesc[0]+longdesc[1]+".......");
-   request.setAttribute("title", item.getCategory()+" "+item.getSubcategory());
+        response.setContentType("text/html;charset=UTF-8");
+                   PrintWriter out = response.getWriter();
 
+        System.out.println(" ne boondha  ra ne bondha");
+      String shortdescription = request.getParameter("shortdescription");
+ArrayList<Item>  list  = TotalItems.totalItems();
+      //TotalItems.totalItems();
+Item item1=null;
+for(Item item:list)
+{
+   
+    //  System.out.println(category+"  "+item.getCategory()+"--"+ subcategory+" "+item.getSubcategory());
+ //System.out.println(category.equals(item.getCategory())+"--"+ subcategory.equals(item.getSubcategory()));
+if(shortdescription.equals(item.getShortDescription()))
+{
+    item1=item;
+    break;
 }
- }
-  //    System.out.println(" size "+itemsObtainedFromSearch.size());
-request.setAttribute("itemsFromSearchButton", itemsObtainedFromSearch);
-request.getRequestDispatcher("FoundItemsInSearch.jsp").forward(request, response);
-  
-  }
+}
+ System.out.println(item1);
+//
+//    request.setAttribute("title", item1.getSubcategory());
+//    request.setAttribute("item", item1);
+
+   out.println(item1);
+       
+    }
+
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

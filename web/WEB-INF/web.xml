@@ -9,7 +9,7 @@
             60
         </session-timeout>
     </session-config>
-    <servlet>
+ <servlet>
   <servlet-name>SingleItemServlet</servlet-name>
   <servlet-class>Place.SingleItemServlet</servlet-class>
 </servlet>
@@ -17,5 +17,15 @@
   <servlet-name>SingleItemServlet</servlet-name>
   <url-pattern>/Place/*</url-pattern>
 </servlet-mapping>
+
+<!--   <servlet>  
+      <servlet-name>CategoryServlet</servlet-name>
+      <servlet-class>Place.CategoryServlet</servlet-class>
+  </servlet>
+
+<servlet-mapping>
+     <servlet-name>CategoryServlet</servlet-name>
+     <url-pattern>/Place/*</url-pattern>
+</servlet-mapping>-->
 
 </web-app>

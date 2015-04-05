@@ -91,7 +91,7 @@ text-align: center;
 }
 #firstl,#secondl,#fourthl
 {
-  width: 16%;
+  width: 18%;
  }
 #thirdl
 {
@@ -99,8 +99,8 @@ text-align: center;
 }
 #fifthl
 { z-index: 1000;
- text-align: center;
- width: 20%;
+ text-align: right;
+ width: 16%;
 }
 
 #menu {
@@ -143,12 +143,65 @@ ul.dropdown { position: relative;  border-radius:10px; z-index:9999}
 #slideShowImages
 {
     margin-top:20px;
-    margin-right: 35%;
+    margin-right: 20%;
     margin-left: 40%;
 }
-img
+#slideShowImages img
 {
     width: 560px;
     height: 400px;
+}
+#singlebar
+{
+    margin-top:20px;
+    margin-right:20%;
+    margin-left: 40%;
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+#singlebar1
+{
+    width: 30%;
+    height:335px;
+    display: inline-block;
+    border-right: 10px;
+    margin: 1%;
+    text-align: center;
+    /*background-color: red;*/
+}
+#singlebar img #singlebar1 img
+{
+width: 10%;
+height: 160px;    
+}
+/*#menuimage
+{
+    width: 10%;
+    height: 16%;
+}*/
+/*cross line over text price*/
+#itemprice1
+{
+    color: green;
+    text-decoration: line-through;
+}
+/*button cod 2*/
+.btn {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #00000b;
+  font-size: 13px;
+  background: #FFCC00;
+  padding: 9px 40px 8px 40px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
 }
 
