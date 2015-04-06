@@ -55,7 +55,8 @@ if(count>0)
     itemsObtainedFromSearch.add(item);//Item sorted 
  String[] longdesc = item.getLongDescription().split("11");
  if(longdesc.length<=1)
- {   System.out.println(" *****+++++++");
+ {  
+     //System.out.println(" *****+++++++");
     request.setAttribute("longdesc", item.getLongDescription());
  }
    else

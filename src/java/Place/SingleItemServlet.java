@@ -34,7 +34,7 @@ public class SingleItemServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        System.out.println(" you are in --- SingleItemServlet?shortdescription=\"+attr;");
+     //   System.out.println(" you are in --- SingleItemServlet?shortdescription=\"+attr;");
         HttpSession session = request.getSession();
       String category = request.getParameter("category");
       String subcategory = request.getParameter("subcategory");
@@ -44,8 +44,8 @@ Item item1=null;
 for(Item item:list)
 {
    
-       System.out.println(category+"  "+item.getCategory()+"--"+ subcategory+" "+item.getSubcategory());
- System.out.println(category.equals(item.getCategory())+"--"+ subcategory.equals(item.getSubcategory()));
+     //  System.out.println(category+"  "+item.getCategory()+"--"+ subcategory+" "+item.getSubcategory());
+ //System.out.println(category.equals(item.getCategory())+"--"+ subcategory.equals(item.getSubcategory()));
 if(category.equals(item.getCategory()) && subcategory.equals(item.getSubcategory()))
 {
     item1=item;

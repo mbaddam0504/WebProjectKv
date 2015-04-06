@@ -1,0 +1,86 @@
+#itemdesc
+{
+    margin-top: 1px;
+    text-align: center;
+    border: 5px solid yellow;
+    border-radius: 5px;
+    height: 20%;
+}
+#tile
+{
+        width: 25%;
+    margin-left: 20%;
+    margin-right: 60%;
+    position: absolute;
+    display: inline-block;
+}
+#paymentdiv
+{
+     width: 25%;
+    margin-left: 60%;
+    margin-right: 10%;
+    display: inline-block;
+}
+#iteminfo
+{
+  text-align: center;
+  font-weight: bold;
+  font-size:30px;
+  
+}
+#paymentinfo
+{
+    
+margin-right: 10%;
+ font-weight: bold;
+ font-size:30px;
+ text-align: center;
+
+}
+#paymentdiv2
+{
+      border-radius: 5px;
+    border:5px solid yellow; 
+    height: 250px;
+}
+
+#quanspan, #price
+{
+    color: red;
+}
+#tabaddress
+{
+  margin-top:5px;
+border: 5px solid yellow;
+ border-radius: 5px;
+ text-align: right;
+}
+/*button cod 2*/
+.btn {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 20px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #00000b;
+  font-size: 16px;
+  background: #FFCC00;
+  padding: 18px 5px 18px 5px;
+  border: solid #1f628d 3px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+  border-radius: 20px;
+}
+#button
+{
+
+    margin-left: 67%;
+    margin-right: 10%;
+    margin-top: 40px;
+}
+
+

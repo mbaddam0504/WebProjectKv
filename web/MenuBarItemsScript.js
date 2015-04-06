@@ -1,13 +1,13 @@
 function func(event)
 {
  document.close();
- var target = event.target || event.srcElement;
-  var el = target.innerHTML;
+  var el = eventVal(event);
 var url = "CategoryServlet?category="+el+"&subcategory=nothing";
 servletfunction(url);
 }
 function PrintDocument(singleList)
-    {   var saleprice=0;
+    {   
+        var saleprice=0;
    document.write('<!DOCTYPE html><html> <head>  <meta http-equiv="X-UA-Compatible" content="IE=Edge"> \n\
  <script src="slideShow.js" type="text/javascript"></script>\n\
 <link rel="stylesheet" type="text/css" href="Searchstyle.css">\n\
@@ -16,7 +16,7 @@ function PrintDocument(singleList)
 <script src="SingleItemScript.js"></script>\n\
  </head><body>  <!--Search Bar Code-->\n\
 	<div id="tfheader">	\n\
-<form id="tfnewsearch" method="get" action="ItemServlet">\n\
+<form id="tfnewsearch" method="post" action="ItemServlet">\n\
      <input type="text" class="tftextinput" name="search" size="21" maxlength="120" placeholder="Search here">\n\
     <input type="submit" value="search" class="tfbutton">\n\
 </form>	</div>  <!--menu bar code-->  \n\
@@ -69,7 +69,14 @@ function PrintDocument(singleList)
     </li>\n\
 \n\
 </ul>\n\
+ <div id="bar">\n\
+   Welcome TO Shopping\n\
+ </div>\n\
+<div id="discount">\n\
+      <a href="#" onclick="discImageFnc(discount)"> <img src="images/sale5.jpg" alt="saleimg"></a>\n\
+</div>\n\
 <div id="singlebar">');
+    
    for(var i=0;i<singleList.length-1;i++){
   
     var string = new String(singleList[i]);
@@ -77,14 +84,14 @@ function PrintDocument(singleList)
       
            saleprice =list[3]-list[3]*list[4]*0.01;
         
-        document.write('<div id="singlebar1">\n\
-   <div id="menuimage">  <a href="BillingPage.html"><img src="'+list[0]+'" alt="'+list[2]+'"/></a> </div><br>\n\
-<a id="mylink1" href="#" onclick="sodi(event)">');
+  document.write('<div id="singlebar1">\n\
+   <div id="menuimage">  <a href="#" onclick="ImageClickFunc(this)" id="'+list[5]+'"><img src="'+list[0]+'" alt="'+list[2]+'"/></a> </div><br>\n\
+<div id="content"><a id="mylink1" href="#" onclick="sodi(event)">');
 document.write(''+list[5]+'</a>\n\
 <p>Actual  Price <span id="itemprice1"> $ '+list[3]+'</span></p>\n\
- <p id="itemprice2">Sale Price $<span style="color:red">'+saleprice+'</span></p>\n\
- <button type="submit" class="btn" onclick="takeToCheckout()">Add To Cart</button> \n\
-</div>\n\
+ <p id="itemprice2">Sale Price $<span style="color:red">'+saleprice+'</span></p> </div><form  action="PaymentServlet" method="post">\n\
+ <button type="submit" class="btn" name="shortdescription" value="'+list[5]+'">Add To Cart</button> \n\
+</div></form>\n\
     ');
 }
 document.writeln('</div></body></html>'); }
@@ -108,14 +115,43 @@ xmlhttp.onreadystatechange=handleStateChange;
 xmlhttp.open("GET",url,true);
 xmlhttp.send(null);
 var handleResponse = function (status, response){
+//    alert(response);
     var singleList = response.toString().split("SQQS");
      PrintDocument(singleList);
  };
  }
  function sodi(event)
  {
-     var target = event.target || event.srcElement;
-  var el = target.innerHTML;
-//     alert(el);
+
+  var el = eventVal(event);
+  //alert(el);
 indiFunc(el);
  }
+ function ImageClickFunc(event)
+ {
+  indiFunc(event.id);  
+ }
+function  discImageFnc(attr)
+{
+            document.close();
+ attr = attr.id===undefined?"discount":attr.id.toString();
+
+var url = "CategoryServlet?category="+attr+"&subcategory=nothing";
+servletfunction(url);
+}
+function slideImageFunc(event)
+{
+    alert(document.getElementById(event.id).getAttribute('src') +"mmm");
+}
+function slideImageFunc1(event)
+{
+    alert("event is "+event);
+    alert("event value is 1"+event.id );
+        alert("event value 2 is "+eventVal(event) );
+    alert("event val3 is "+document.getElementById(event.id).src);
+}
+function eventVal(event)
+{
+ var target = event.target || event.srcElement;
+  return target.innerHTML;   
+}

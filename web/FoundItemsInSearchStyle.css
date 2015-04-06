@@ -5,7 +5,7 @@ font-weight: bold;
 color: red;
 }
 
-#firstdivision
+/*#firstdivision
 {
  width: 350px;
  height: 350px;
@@ -16,7 +16,31 @@ color: red;
 //margin between divisions
  float: left;
  margin-right:40px;
-/*displays each division side by side*/
+displays each division side by side
 display: inline-block;
 vertical-align: middle
+}*/
+#singlebar3
+{
+    margin-top:20px;
+    margin-right:20%;
+    margin-left: 40%;
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+#singlebar4
+{
+    width: 30%;
+    height:335px;
+    display: inline-block;
+    border-right: 10px;
+    margin: 1%;
+    text-align: center;
+    /*background-color: red;*/
+}
+#singlebar img #singlebar1 img
+{
+width: 10%;
+height: 160px;    
 }

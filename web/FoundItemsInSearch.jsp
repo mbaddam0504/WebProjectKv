@@ -82,18 +82,29 @@
  <div id="bar">
    Welcome TO Shopping
  </div>
+    <div id="discount">
+ <a href="#" onclick="discImageFnc('discount')"> <img src="images/sale5.jpg" alt="saleimg"></a>
+  </div>
+       <div id="singlebar">
  <c:forEach var="item" items="${itemsFromSearchButton}">
-     <div id="singlebar">
-    <div id="singlebar1">
+ <div id="singlebar1"> 
  <img src="${item.getImagePath()}"/> <br>
 <input type="hidden" id="totalvalue" value="${item}"/>
-<a id="mylink" href="#" onclick='func("${item}")'><c:out value="${item.getShortDescription()}"/></a>
+ <div id="content">
+<a id="mylink" href="#" onclick='func3("${item}")'><c:out value="${item.getShortDescription()}"/></a>
  <br>
  <p id="itemprice">$ <c:out value="${item.getPrice()}"/></p>
- <c:out value="${longdesc}"/>
-   </div>
-     </div>
+ <c:set var="actualprice" scope="session" value="${item.getPrice()}"/>
+    <c:set var="discount" scope="session" value="${item.getDiscount()}"/>
+    <c:set var="saleprice" scope="session" value="${actualprice-discount*0.01}"/>
+    <c:if test="${discount>0}">
+     <p id="itemprice2">Sale Price $<span style="color:red"><c:out value="${saleprice}"/></span></p>
+    </c:if>
+  </div>
+    <button type="submit" class="btn" onclick="takeToCheckout()">Add To Cart</button> 
+ </div>
 </c:forEach>
+       </div>
 
     </body>
 </html>

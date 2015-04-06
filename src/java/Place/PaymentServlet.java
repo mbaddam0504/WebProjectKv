@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Place;
 
 import java.io.IOException;
@@ -19,8 +18,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author S519459
  */
-@WebServlet(name = "CategoryServlet", urlPatterns = {"/CategoryServlet"})
-public class CategoryServlet extends HttpServlet {
+@WebServlet(name = "PaymentServlet", urlPatterns = {"/PaymentServlet"})
+public class PaymentServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,43 +32,33 @@ public class CategoryServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-     // System.out.println("MAMAMA");
-        response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
-        
-    String category = request.getParameter("category");
-  //String   subcategory = request.getParameter("subcategory");
-
-//        System.out.println(category+"--");
-        ArrayList<Item> al = TotalItems.totalItems();
-        String result = "";
-        for(Item it :al)
-        {
-       if(it!=null)
-       {
-        if(it.getCategory().equalsIgnoreCase(category))
-        {
-            
-            result+= it.toString()+"SQQS";
-        }
-        else if(it.getSubcategory().split("-")[0].equalsIgnoreCase(category))
-                {
-//                    System.out.println(it);    
-              result+= it.toString()+"SQQS";                  
-                }
-        else if(category.equals("discount"))
-        {
-        if(it.getDiscount()>0)
-        {
-       //     System.out.println(it.getImagePath()+it.getShortDescription());
-                     result+= it.toString()+"SQQS";                   
-        }
-        }
-        }
-        }
-     //   System.out.println("88");
-   out.println(result);
-
+         String shortdescription = request.getParameter("shortdescription");
+      String quantity = (String)(request.getParameter("quantity"));
+if(quantity==null || quantity=="")
+    quantity="1";
+int totaquant = Integer.parseInt(quantity);
+double totalPrice = 0;
+         System.out.println("checkout short des "+shortdescription);
+ArrayList<Item>  list  = TotalItems.totalItems();
+      //TotalItems.totalItems();
+Item item1=null;
+for(Item item:list)
+{
+   
+    //  System.out.println(category+"  "+item.getCategory()+"--"+ subcategory+" "+item.getSubcategory());
+ //System.out.println(category.equals(item.getCategory())+"--"+ subcategory.equals(item.getSubcategory()));
+if(shortdescription.equals(item.getShortDescription()))
+{
+    item1=item;
+    totalPrice=item.getPrice()*(1-item.getDiscount()*0.01)*totaquant;
+    break;
+}
+}
+request.setAttribute("quantity", totaquant);
+request.setAttribute("totalPrice", totalPrice);
+request.setAttribute("ITEM", item1);
+request.getRequestDispatcher("PaymentPage.jsp").forward(request, response);
+//response.sendRedirect("/PaymentPage.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

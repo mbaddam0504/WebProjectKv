@@ -37,7 +37,7 @@ public class SingleItemScriptServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
                    PrintWriter out = response.getWriter();
 
-        System.out.println(" ne boondha  ra ne bondha");
+       // System.out.println(" ne boondha  ra ne bondha");
       String shortdescription = request.getParameter("shortdescription");
 ArrayList<Item>  list  = TotalItems.totalItems();
       //TotalItems.totalItems();
@@ -53,7 +53,7 @@ if(shortdescription.equals(item.getShortDescription()))
     break;
 }
 }
- System.out.println(item1);
+ //System.out.println(item1);
 //
 //    request.setAttribute("title", item1.getSubcategory());
 //    request.setAttribute("item", item1);

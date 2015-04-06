@@ -1,3 +1,13 @@
+body
+{
+ //   background-image: url('images/background.jpg');
+   background-color: whitesmoke; 
+}
+
+bo img
+{
+    width: 100%;height: 100%;
+}
 #bar
 {
   margin-top: 0px;
@@ -125,7 +135,7 @@ ul.dropdown { position: relative;  border-radius:10px; z-index:9999}
     display:block;
 }
 #menu > li > ul {
-    background-color: red;
+    background-color: white;
     display: none;
     position: absolute;
 }
@@ -145,12 +155,14 @@ ul.dropdown { position: relative;  border-radius:10px; z-index:9999}
     margin-top:20px;
     margin-right: 20%;
     margin-left: 40%;
+    display: inline-block;
 }
 #slideShowImages img
 {
     width: 560px;
-    height: 400px;
+    height: 450px;
 }
+/*for both founditeminserach.jsp and menubaritemscript.js*/
 #singlebar
 {
     margin-top:20px;
@@ -159,27 +171,39 @@ ul.dropdown { position: relative;  border-radius:10px; z-index:9999}
     width: 40%;
     display: inline-block;
     vertical-align: middle;
+    display: block;
+     float: left;
+     border:2px solid #0095cd;
+    
 }
 #singlebar1
 {
     width: 30%;
-    height:335px;
-    display: inline-block;
+    height:460px;
     border-right: 10px;
     margin: 1%;
     text-align: center;
     /*background-color: red;*/
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
 }
-#singlebar img #singlebar1 img
+/*#singlebar img #singlebar1 img
 {
 width: 10%;
 height: 160px;    
-}
-/*#menuimage
-{
-    width: 10%;
-    height: 16%;
 }*/
+#menuimage
+{
+    width: 100%;;
+    height: 40%;
+    /*background-color: green;*/
+}
+#menuimage img
+{
+    width:100%;
+    height:100%;
+}
 /*cross line over text price*/
 #itemprice1
 {
@@ -204,4 +228,29 @@ height: 160px;
   background: #3cb0fd;
   text-decoration: none;
 }
-
+/*Found items in search jsp file's cod*/
+#itemprice
+{
+font-weight: bold;
+color: red;
+}
+/*sale image style*/
+#discount
+{
+   margin-top: 20px;
+  margin-left: 20%;
+    width: 18%;
+  display: block;
+   position: absolute;
+}
+#discount img
+{
+     border-right: 20px solid whitesmoke;
+    width: 100%;
+    height: 450px;
+}
+/*for link short description*/
+#content
+{
+    height: 40%;
+}
