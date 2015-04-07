@@ -35,6 +35,8 @@ public class SingleItemServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
      //   System.out.println(" you are in --- SingleItemServlet?shortdescription=\"+attr;");
+            System.out.println("singirser servlet");
+
         HttpSession session = request.getSession();
       String category = request.getParameter("category");
       String subcategory = request.getParameter("subcategory");

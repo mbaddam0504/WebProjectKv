@@ -127,17 +127,19 @@ text-align: center;
 }
 ul.dropdown { position: relative;  border-radius:10px; z-index:9999}
 #menu li {
-    float: left;
+    float:left;
     position: relative;
     list-style: none;
+    text-align: left;
 }
 #menu > li:hover > ul {
     display:block;
 }
 #menu > li > ul {
-    background-color: white;
+    background-color: whitesmoke;
     display: none;
     position: absolute;
+    /*color: red;*/
 }
 #menu li a {
     display:block;
@@ -145,10 +147,12 @@ ul.dropdown { position: relative;  border-radius:10px; z-index:9999}
     text-decoration:none;
     font-weight:bold;
     white-space: nowrap;
+    text-align: center;
 }
 #menu li a:hover {
     color:#c00;
 }
+
 /*slide show images */
 #slideShowImages
 {

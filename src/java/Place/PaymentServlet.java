@@ -32,6 +32,8 @@ public class PaymentServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+              System.out.println("payment servlet");
+
          String shortdescription = request.getParameter("shortdescription");
       String quantity = (String)(request.getParameter("quantity"));
 if(quantity==null || quantity=="")

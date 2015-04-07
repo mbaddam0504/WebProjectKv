@@ -3,25 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Place;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author S519459
  */
-@WebServlet(name = "ItemServlet", urlPatterns = {"/ItemServlet"})
-public class ItemServlet extends HttpServlet {
+@WebServlet(name = "PrintDocument", urlPatterns = {"/PrintDocument"})
+public class PrintDocument extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,58 +31,21 @@ public class ItemServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet PrintDocument</title>");            
+            out.println("</head>");
+            out.println("<body>");
+          //  out.println("<h1>Servlet PrintDocument at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
+    }
 
-HttpSession session = request.getSession();
-ArrayList<Item> itemsObtainedFromSearch = new ArrayList<Item>();
-String nameFromSearch = request.getParameter("search");
-ArrayList<Item> totalItems = TotalItems.totalItems();
-session.setAttribute("items", totalItems);
-for(Item item :totalItems)
-{
-
-String[] arr = item.getShortDescription().split(" ");
-int count=0;
-    /*search in short description*/
-for(String el :arr)
-{
-if(nameFromSearch.equalsIgnoreCase(el))
-{
-    count++;
-}}
-  /*search in  category*/
-if(count==0  )
-{
-if(nameFromSearch.equalsIgnoreCase(item.getCategory()) || (nameFromSearch+"s").equalsIgnoreCase(item.getCategory()))
-{   
-  count++;
-}
-} /*search in  subcategory*/
-if(count==0)
-{
-    if(nameFromSearch.equalsIgnoreCase(item.getSubcategory().split("-")[0])|| (nameFromSearch+"s").equalsIgnoreCase(item.getSubcategory().split("-")[0]+"s"))
-  count++;
-}
-
-if(count>0)
-{
-
-    itemsObtainedFromSearch.add(item);//Item sorted 
- String[] longdesc = item.getLongDescription().split("11");
- if(longdesc.length<=1)
- {  
-    request.setAttribute("longdesc", item.getLongDescription());
- }
-   else
-    request.setAttribute("longdesc", longdesc[0]+longdesc[1]+".......");
-   request.setAttribute("title", item.getCategory()+" "+item.getSubcategory());
-
-}
- }
-  //    System.out.println(" size "+itemsObtainedFromSearch.size());
-request.setAttribute("itemsFromSearchButton", itemsObtainedFromSearch);
-request.getRequestDispatcher("FoundItemsInSearch.jsp").forward(request, response);
-  
-  }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

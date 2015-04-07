@@ -29,69 +29,70 @@
 		</form>
 	</div>
   <!--menu bar code-->
-  <ul id="menu" onclick="func(event)">
-      <li id="firstl"  ><a href="#">Fashion</a>
-   <ul id="fashion" onclick="subfunc(event);">
-             <li><a href="#">Skirts</a></li>
-             <li><a href="#">Sweaters</a></li>
-             <li><a href="#">dresses</a></li>
-             <li><a href="#">outerwears</a></li>
-             <li><a href="#">pants</a></li>
+<ul id="menu" >
+      <li id="firstl"  ><a href="CategoryServlet?category=Fashion">Fashion</a>
+   <ul>
+             <li><a href="CategoryServlet?category=Skirts">Skirts</a></li>
+             <li><a href="CategoryServlet?category=Sweaters">Sweaters</a></li>
+             <li><a href="CategoryServlet?category=dresses">dresses</a></li>
+             <li><a href="CategoryServlet?category=outerwears">outerwears</a></li>
+             <li><a href="CategoryServlet?category=pants">pants</a></li>
              
         </ul>
         
     </li>
-    <li id="secondl"><a href="#">Sporting goods</a>
-   <ul id="Sportinggoods" onclick="subfunc(event);">
-             <li><a href="#">Badminton</a></li>
-             <li><a href="#">basketball</a></li>
-             <li><a href="#">cricketbats</a></li>
-             <li><a href="#">golf</a></li>
-             <li><a href="#">tennis</a></li>
+    <li id="secondl"><a href="CategoryServlet?category=Sporting goods">Sporting goods</a>
+   <ul>
+             <li><a href="CategoryServlet?category=Badminton">Badminton</a></li>
+             <li><a href="CategoryServlet?category=basketball">basketball</a></li>
+             <li><a href="CategoryServlet?category=cricketbats">cricketbats</a></li>
+             <li><a href="CategoryServlet?category=golf">golf</a></li>
+             <li><a href="CategoryServlet?category=tennis">tennis</a></li>
         </ul>
     </li>
-    <li id="thirdl"><a href="#">Electronic goods</a>
-   <ul id="Electronicgoods" onclick="subfunc(event);">
-             <li><a href="#">Home theater</a></li>
-             <li><a href="#">Television</a></li>
-             <li><a href="#">cameras</a></li>
-             <li><a href="#">cellphones</a></li>
-             <li><a href="#">computers</a></li>
+    <li id="thirdl"><a href="CategoryServlet?category=Electronic goods">Electronic goods</a>
+   <ul >
+             <li><a href="CategoryServlet?category=Home theater">Home theater</a></li>
+             <li><a href="CategoryServlet?category=Television">Television</a></li>
+             <li><a href="CategoryServlet?category=cameras">cameras</a></li>
+             <li><a href="CategoryServlet?category=cellphones">cellphones</a></li>
+             <li><a href="CategoryServlet?category=computers">computers</a></li>
         </ul>    
     </li>
-    <li id="fourthl"><a href="#">Handbags</a>
-   <ul id="Handbags" onclick="subfunc(event);">
-             <li><a href="#">Buckets and sacs</a></li>
-             <li><a href="#">Crossbody bags</a></li>
-             <li><a href="#">Hobos</a></li>
-             <li><a href="#">Satchels</a></li>
-             <li><a href="#">wallets</a></li>
+    <li id="fourthl"><a href="CategoryServlet?category=Handbags">Handbags</a>
+   <ul >
+             <li><a href="CategoryServlet?category=Buckets and sacs">Buckets and sacs</a></li>
+             <li><a href="CategoryServlet?category=Crossbody bags">Crossbody bags</a></li>
+             <li><a href="CategoryServlet?category=Hobos">Hobos</a></li>
+             <li><a href="CategoryServlet?category=Satchels">Satchels</a></li>
+             <li><a href="CategoryServlet?category=wallets">wallets</a></li>
         </ul>    
     </li>
-    <li id="fifthl"><a href="#">shoes</a>
-   <ul id="shoes" onclick="subfunc(event);">
-             <li><a href="#">boots</a></li>
-             <li><a href="#">flats</a></li>
-             <li><a href="#">outdoors</a></li>
-             <li><a href="#">sandals</a></li>
-             <li><a href="#">slippers</a></li>
+    <li id="fifthl"><a href="CategoryServlet?category=shoes">shoes</a>
+   <ul >
+             <li><a href="CategoryServlet?category=boots">boots</a></li>
+             <li><a href="CategoryServlet?category=flats">flats</a></li>
+             <li><a href="CategoryServlet?category=outdoors">outdoors</a></li>
+             <li><a href="CategoryServlet?category=sandals">sandals</a></li>
+             <li ><a href="PaymentServlet?category=slippers" name="category">slippers</a></li>
         </ul>
     </li>
 
 </ul>
+
  <div id="bar">
    Welcome TO Shopping
  </div>
-    <div id="discount">
- <a href="#" onclick="discImageFnc('discount')"> <img src="images/sale5.jpg" alt="saleimg"></a>
+  <div id="discount">
+      <a href="CategoryServlet?category=discount" > <img src="images/sale5.jpg" alt="saleimg" name="category1" ></a>
   </div>
        <div id="singlebar">
  <c:forEach var="item" items="${itemsFromSearchButton}">
  <div id="singlebar1"> 
-  <div id="menuimage">  <a href="#" onclick="ImageClickFunc(this)" id="${item.getShortDescription()}"><img src="${item.getImagePath()}" alt="'ll"/></a> </div><br>
+  <div id="menuimage">  <a href="SingleItemScriptServlet?shortdescription=${item.getShortDescription()}" id="${item.getShortDescription()}"><img src="${item.getImagePath()}" alt="'ll"/></a> </div><br>
 <input type="hidden" id="totalvalue" value="${item}"/>
  <div id="content">
-<a id="mylink" href="#" onclick='func3("${item}")'><c:out value="${item.getShortDescription()}"/></a>
+<a id="mylink1" href="SingleItemScriptServlet?shortdescription=${item.getShortDescription()}" ><c:out value="${item.getShortDescription()}"/></a>
  <br>
  <p id="itemprice">$ <c:out value="${item.getPrice()}"/></p>
  <c:set var="actualprice" scope="session" value="${item.getPrice()}"/>

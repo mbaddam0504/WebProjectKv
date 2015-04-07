@@ -7,7 +7,6 @@
    <script src="slideShow.js"></script>
 <link rel="stylesheet" type="text/css" href="Searchstyle.css">
 <link rel="shortcut icon" href="rose.ico" />
-<script src="MenuBarItemsScript.js"></script>
 </head>
 <body>
   <!--Search Bar Code-->
@@ -18,61 +17,63 @@
 		</form>
 	</div>
   <!--menu bar code-->
-  <ul id="menu" onclick="func(event)">
-      <li id="firstl"  ><a href="#">Fashion</a>
+
+  <ul id="menu" >
+      <li id="firstl"  ><a href="CategoryServlet?category=Fashion">Fashion</a>
    <ul>
-             <li><a href="#">Skirts</a></li>
-             <li><a href="#">Sweaters</a></li>
-             <li><a href="#">dresses</a></li>
-             <li><a href="#">outerwears</a></li>
-             <li><a href="#">pants</a></li>
+             <li><a href="CategoryServlet?category=Skirts">Skirts</a></li>
+             <li><a href="CategoryServlet?category=Sweaters">Sweaters</a></li>
+             <li><a href="CategoryServlet?category=dresses">dresses</a></li>
+             <li><a href="CategoryServlet?category=outerwears">outerwears</a></li>
+             <li><a href="CategoryServlet?category=pants">pants</a></li>
              
         </ul>
         
     </li>
-    <li id="secondl"><a href="#">Sporting goods</a>
+    <li id="secondl"><a href="CategoryServlet?category=Sporting goods">Sporting goods</a>
    <ul>
-             <li><a href="#">Badminton</a></li>
-             <li><a href="#">basketball</a></li>
-             <li><a href="#">cricketbats</a></li>
-             <li><a href="#">golf</a></li>
-             <li><a href="#">tennis</a></li>
+             <li><a href="CategoryServlet?category=Badminton">Badminton</a></li>
+             <li><a href="CategoryServlet?category=basketball">basketball</a></li>
+             <li><a href="CategoryServlet?category=cricketbats">cricketbats</a></li>
+             <li><a href="CategoryServlet?category=golf">golf</a></li>
+             <li><a href="CategoryServlet?category=tennis">tennis</a></li>
         </ul>
     </li>
-    <li id="thirdl"><a href="#">Electronic goods</a>
+    <li id="thirdl"><a href="CategoryServlet?category=Electronic goods">Electronic goods</a>
    <ul >
-             <li><a href="#">Home theater</a></li>
-             <li><a href="#">Television</a></li>
-             <li><a href="#">cameras</a></li>
-             <li><a href="#">cellphones</a></li>
-             <li><a href="#">computers</a></li>
+             <li><a href="CategoryServlet?category=Home theater">Home theater</a></li>
+             <li><a href="CategoryServlet?category=Television">Television</a></li>
+             <li><a href="CategoryServlet?category=cameras">cameras</a></li>
+             <li><a href="CategoryServlet?category=cellphones">cellphones</a></li>
+             <li><a href="CategoryServlet?category=computers">computers</a></li>
         </ul>    
     </li>
-    <li id="fourthl"><a href="#">Handbags</a>
+    <li id="fourthl"><a href="CategoryServlet?category=Handbags">Handbags</a>
    <ul >
-             <li><a href="#">Buckets and sacs</a></li>
-             <li><a href="#">Crossbody bags</a></li>
-             <li><a href="#">Hobos</a></li>
-             <li><a href="#">Satchels</a></li>
-             <li><a href="#">wallets</a></li>
+             <li><a href="CategoryServlet?category=Buckets and sacs">Buckets and sacs</a></li>
+             <li><a href="CategoryServlet?category=Crossbody bags">Crossbody bags</a></li>
+             <li><a href="CategoryServlet?category=Hobos">Hobos</a></li>
+             <li><a href="CategoryServlet?category=Satchels">Satchels</a></li>
+             <li><a href="CategoryServlet?category=wallets">wallets</a></li>
         </ul>    
     </li>
-    <li id="fifthl"><a href="#">shoes</a>
-   <ul>
-             <li><a href="#">boots</a></li>
-             <li><a href="#">flats</a></li>
-             <li><a href="#">outdoors</a></li>
-             <li><a href="#">sandals</a></li>
-             <li><a href="#">slippers</a></li>
+    <li id="fifthl"><a href="CategoryServlet?category=shoes">shoes</a>
+   <ul >
+             <li><a href="CategoryServlet?category=boots">boots</a></li>
+             <li><a href="CategoryServlet?category=flats">flats</a></li>
+             <li><a href="CategoryServlet?category=outdoors">outdoors</a></li>
+             <li><a href="CategoryServlet?category=sandals">sandals</a></li>
+             <li ><a href="PaymentServlet?category=slippers" name="category">slippers</a></li>
         </ul>
     </li>
 
 </ul>
+
  <div id="bar">
    Welcome TO Shopping
  </div>
   <div id="discount">
-      <a href="#" onclick="discImageFnc('discount')"> <img src="images/sale5.jpg" alt="saleimg"></a>
+      <a href="CategoryServlet?category=discount" > <img src="images/sale5.jpg" alt="saleimg" name="category1" ></a>
   </div>
 <div id="slideShowImages" >
     <ul style="list-style-type: none " onclick="slideImageFunc1(event)">

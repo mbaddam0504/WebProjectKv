@@ -1,5 +1,6 @@
 function func(event)
 {
+    alert("mkkk");
  document.close();
   var el = eventVal(event);
 var url = "CategoryServlet?category="+el+"&subcategory=nothing";
@@ -73,7 +74,7 @@ function PrintDocument(singleList)
    Welcome TO Shopping\n\
  </div>\n\
 <div id="discount">\n\
-      <a href="#" onclick="discImageFnc(discount)"> <img src="images/sale5.jpg" alt="saleimg"></a>\n\
+  <a href="CategoryServlet?category=discount" > <img src="images/sale5.jpg" alt="saleimg" name="category" ></a>\n\
 </div>\n\
 <div id="singlebar">');
     
@@ -116,8 +117,8 @@ xmlhttp.open("GET",url,true);
 xmlhttp.send(null);
 var handleResponse = function (status, response){
 //    alert(response);
-    var singleList = response.toString().split("SQQS");
-     PrintDocument(singleList);
+//    var singleList = response.toString().split("SQQS");
+//     PrintDocument(singleList);
  };
  }
  function sodi(event)
