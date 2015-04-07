@@ -129,6 +129,7 @@ indiFunc(el);
  }
  function ImageClickFunc(event)
  {
+//     alert(event.id);
   indiFunc(event.id);  
  }
 function  discImageFnc(attr)

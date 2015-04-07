@@ -16,6 +16,7 @@
 }
 #paymentdiv
 {
+    margin-top: 10%;
      width: 25%;
     margin-left: 60%;
     margin-right: 10%;
@@ -30,7 +31,6 @@
 }
 #paymentinfo
 {
-    
 margin-right: 10%;
  font-weight: bold;
  font-size:30px;
@@ -39,6 +39,7 @@ margin-right: 10%;
 }
 #paymentdiv2
 {
+    margin-top: 30px;
       border-radius: 5px;
     border:5px solid yellow; 
     height: 250px;

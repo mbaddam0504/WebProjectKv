@@ -88,7 +88,7 @@
        <div id="singlebar">
  <c:forEach var="item" items="${itemsFromSearchButton}">
  <div id="singlebar1"> 
- <img src="${item.getImagePath()}"/> <br>
+  <div id="menuimage">  <a href="#" onclick="ImageClickFunc(this)" id="${item.getShortDescription()}"><img src="${item.getImagePath()}" alt="'ll"/></a> </div><br>
 <input type="hidden" id="totalvalue" value="${item}"/>
  <div id="content">
 <a id="mylink" href="#" onclick='func3("${item}")'><c:out value="${item.getShortDescription()}"/></a>
