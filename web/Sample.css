@@ -1,0 +1,16 @@
+a
+{
+text-decoration: none;
+}
+a:visited
+{
+    color: blue;
+}
+#menu
+{
+    display: inline-block;
+}
+table tr 
+{
+    text-align: center;
+}

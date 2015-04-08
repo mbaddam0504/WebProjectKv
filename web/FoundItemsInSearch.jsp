@@ -21,6 +21,11 @@
 <script src="SingleItemScript.js"></script>
     </head>
     <body>
+           <div id="logonsearch">
+    <!--logo image code-->
+    <div id="logo">
+        <a href="index.html"> <img src="logo/logofinal.png" alt="GoNClick" /></a>
+    </div>
  <!--Search Bar Code-->
 	<div id="tfheader">
 		<form id="tfnewsearch" method="get" action="ItemServlet">
@@ -28,6 +33,7 @@
                         <input type="submit" value="search" class="tfbutton">
 		</form>
 	</div>
+           </div>
   <!--menu bar code-->
 <ul id="menu" >
       <li id="firstl"  ><a href="CategoryServlet?category=Fashion">Fashion</a>
@@ -102,7 +108,9 @@
      <p id="itemprice2">Sale Price $<span style="color:red"><c:out value="${saleprice}"/></span></p>
     </c:if>
   </div>
-    <button type="submit" class="btn" onclick="takeToCheckout()">Add To Cart</button> 
+    <form action="PaymentServlet" method="get">
+    <button type="submit" class="btn" name="shortdescription" value="${item.getShortDescription()}">Add To Cart</button> 
+    </form>
  </div>
 </c:forEach>
        </div>

@@ -4,5 +4,11 @@
             "context": "ul"
         }
     },
-    "elements": {}
+    "elements": {
+        "a": {
+            "attributes": {
+                "href": {}
+            }
+        }
+    }
 }

@@ -80,12 +80,16 @@ public static final String REALTIVE_PATH ="/";
                 "<link rel=\"shortcut icon\" href=\"rose.ico\" />\n" +
                 "<script src=\"MenuBarItemsScript.js\"></script>\n" +
                 "<script src=\"SingleItemScript.js\"></script>\n" +
-                " </head><body>  <!--Search Bar Code-->\n" +
+                " </head><body>    <div id=\"logonsearch\">\n" +
+"    <!--logo image code-->\n" +
+"    <div id=\"logo\">\n" +
+"        <a href=\"index.html\"> <img src=\"logo/logofinal.png\" alt=\"GoNClick\" /></a>\n" +
+"    </div> <!--Search Bar Code-->\n" +
                 "	<div id=\"tfheader\">\n" +
                 "<form id=\"tfnewsearch\" method=\"post\" action=\"ItemServlet\">\n" +
                 "     <input type=\"text\" class=\"tftextinput\" name=\"search\" size=\"21\" maxlength=\"120\" placeholder=\"Search here\">\n" +
                 "    <input type=\"submit\" value=\"search\" class=\"tfbutton\">\n" +
-                "</form>	</div>  <!--menu bar code-->  \n" +
+                "</form>	</div></div>  <!--menu bar code-->  \n" +
                 "   <ul id=\"menu\""
 //                + " onclick=\"func(event)\""
                 + ">\n" +
@@ -154,16 +158,12 @@ public static final String REALTIVE_PATH ="/";
 
             out.print(""+list[5]+"</a>\n" +
                     "<p>Actual  Price <span id=\"itemprice1\"> $ "+list[3]+"</span></p>\n" +
-                    " <p id=\"itemprice2\">Sale Price $<span style=\"color:red\">"+String.format( "%.2f", saleprice )+"</span></p> </div><form  action=\"PaymentServlet\" method=\"post\">\n" +
+                    " <p id=\"itemprice2\">Sale Price $<span style=\"color:red\">"+String.format( "%.2f", saleprice )+"</span></p> </div><form  action=\"PaymentServlet\" method=\"get\">\n" +
                     " <button type=\"submit\" class=\"btn\" name=\"shortdescription\" value="+list[5]+">Add To Cart</button> \n" +
                     "</div></form>");
         }
         
-        out.print(" <div id=\"footer\">\n" +
-"      Contact Us At +15467324567\n" +
-"                        @GoNClick. All rights reserved\n" +
-"\n" +
-"  </div></div></body></html>");
+        out.print("</div></body></html>");
     }
     }
 
