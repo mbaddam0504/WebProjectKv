@@ -74,7 +74,11 @@ String[] arr2 = arr[6].split("11");
             }
         }
 out.print(" </ul></div><div id=\"checkoutdiv\" style=\"float: left;\">\n"+
-"<form action=\"PaymentServlet\" method=\"get\"><p id=\"quantity\"> Quantity:- <select name=\"quantity\"><option>1</option><option>2</option> <option>3</option><option>4</option><option>5</option></select> </p><br><button type=\"submit\" class=\"btn\" name=\"shortdescription\" value=\""+arr[5]+"\" >Add To Cart</button></form> </div> </body></html>");
+"<form action=\"PaymentServlet\" method=\"get\"><p id=\"quantity\"> Quantity:- <select name=\"quantity\"><option>1</option><option>2</option> <option>3</option><option>4</option><option>5</option></select> </p><br><button type=\"submit\" class=\"btn\" name=\"shortdescription\" value=\""+arr[5]+"\" >Add To Cart</button></form> </div>  <div id=\"footer\">\n" +
+"      Contact Us At +15467324567\n" +
+"                        @GoNClick. All rights reserved\n" +
+"\n" +
+"  </div></body></html>");
 
        
     }

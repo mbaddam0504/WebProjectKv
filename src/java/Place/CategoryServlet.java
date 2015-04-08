@@ -159,7 +159,11 @@ public static final String REALTIVE_PATH ="/";
                     "</div></form>");
         }
         
-        out.print("</div></body></html>");
+        out.print(" <div id=\"footer\">\n" +
+"      Contact Us At +15467324567\n" +
+"                        @GoNClick. All rights reserved\n" +
+"\n" +
+"  </div></div></body></html>");
     }
     }
 
