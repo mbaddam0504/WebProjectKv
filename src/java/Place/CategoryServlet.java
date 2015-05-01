@@ -8,6 +8,7 @@ package Place;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -159,7 +160,7 @@ public static final String REALTIVE_PATH ="/";
             out.print(""+list[5]+"</a>\n" +
                     "<p>Actual  Price <span id=\"itemprice1\"> $ "+list[3]+"</span></p>\n" +
                     " <p id=\"itemprice2\">Sale Price $<span style=\"color:red\">"+String.format( "%.2f", saleprice )+"</span></p> </div><form  action=\"PaymentServlet\" method=\"get\">\n" +
-                    " <button type=\"submit\" class=\"btn\" name=\"shortdescription\" value="+list[5]+">Add To Cart</button> \n" +
+                    " <button type=\"submit\" class=\"btn\" name=\"shortdescription\" value="+URLEncoder.encode(list[5])+">Add To Cart</button> \n" +
                     "</div></form>");
         }
         

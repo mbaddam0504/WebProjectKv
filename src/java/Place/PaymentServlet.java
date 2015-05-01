@@ -35,6 +35,7 @@ public class PaymentServlet extends HttpServlet {
               System.out.println("payment servlet");
 
          String shortdescription = request.getParameter("shortdescription");
+           shortdescription=  java.net.URLDecoder.decode(shortdescription, "UTF-8");
       String quantity = (String)(request.getParameter("quantity"));
 if(quantity==null || quantity=="")
     quantity="1";
