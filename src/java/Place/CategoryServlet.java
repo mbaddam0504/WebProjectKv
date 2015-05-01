@@ -82,7 +82,7 @@ public static final String REALTIVE_PATH ="/";
                 " </head><body>    <div id=\"logonsearch\">\n" +
 "    <!--logo image code-->\n" +
 "    <div id=\"logo\">\n" +
-"        <a href=\"index.html\"> <img src=\"logo/logofinal.png\" alt=\"GoNClick\" /></a>\n" +
+"        <a href=\"index.html\"> <img src=\"logo/group6.jpg\" alt=\"GoNClick\" /></a>\n" +
 "    </div> <!--Search Bar Code-->\n" +
                 "	<div id=\"tfheader\">\n" +
                 "<form id=\"tfnewsearch\" method=\"post\" action=\"ItemServlet\">\n" +
@@ -117,11 +117,6 @@ public static final String REALTIVE_PATH ="/";
                   "    <li id=\"thirdl\"><a href=\"CategoryServlet?category=Support\">Support</a></li>\n" +
              
                 "</ul> </div>\n" +
-                " <div id=\"bar\">\n" +
-                "   Welcome TO Shopping\n" +
-                " </div>\n" +
-                "<div id=\"discount\">\n" +
-                "  <a href=\"CategoryServlet?category=discount\" > <img src=\"images/sale5.jpg\" alt=\"saleimg\" name=\"category\" ></a>\n" +
                 "</div> <div id=\"singlebar\">");
         for (String singleList1 : singleList) {
             String[] list = singleList1.split("QWER");

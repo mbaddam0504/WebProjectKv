@@ -146,36 +146,38 @@ table tr
 }
 
 /*for both founditeminserach.jsp and menubaritemscript.js*/
-/*#singlebar
+#singlebar
 {
     margin-top:20px;
-    margin-right:20%;
-    margin-left: 40%;
-    width: 40%;
+    /*margin-right:20%;*/
+    /*margin-left: 40%;*/
+    width: 100%;
     display: inline-block;
     vertical-align: middle;
     display: block;
      float: left;
-     border:2px solid #0095cd;
+     /*border:2px solid #0095cd;*/
     
 }
 #singlebar1
 {
-    width: 30%;
+    width: 40%;
     height:460px;
     border-right: 10px;
     margin: 1%;
     text-align: center;
-    background-color: red;
+    /*background-color: red;*/
     vertical-align: middle;
     display: inline-block;
     float: left;
-}*/
-/*#singlebar img #singlebar1 img
+  border:2px solid seagreen;
+
+}
+#singlebar img ,#singlebar1 img
 {
-width: 10%;
+width: 200px;
 height: 160px;    
-}*/
+}
 /*#menuimage
 {
     width: 100%;;
@@ -194,14 +196,14 @@ height: 160px;
     text-decoration: line-through;
 }*/
 /*button cod 2*/
-/*.btn {
+.btn {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   font-family: Arial;
   color: #00000b;
   font-size: 13px;
-  background: #FFCC00;
+  background: green;
   padding: 9px 40px 8px 40px;
   border: solid #1f628d 2px;
   text-decoration: none;
@@ -210,7 +212,7 @@ height: 160px;
 .btn:hover {
   background: #3cb0fd;
   text-decoration: none;
-}
+}/*
 Found items in search jsp file's cod
 #itemprice
 {

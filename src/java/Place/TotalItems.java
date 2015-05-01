@@ -54,20 +54,20 @@ list.add(new Item("Products/Laptops/l4.jpg","Products","Laptops-4",310.0,0.0,"20
 //Deals page
 
 //20-30%
-list.add(new Item("Deals/20-30%/de1.jpg","Products","20-30%-1",340.0,25.0,"Dell Inspiron 15 5000 Series i5547-3750sLV 15-Inch Laptop","4th Generation Intel Core i5-4210U processor118 GB DDR3 (1.7 GHz Native Clocking Speed; up to 2.7 Ghz with Turboboost)111000 GB 5400 rpm Hard Drive1115-Inch Screen11Windows 8.1",null));
-list.add(new Item("Deals/20-30%/de2.jpg","Products","20-30%-2",440.0,20.0,"Lenovo IdeaPad S405 14 Slim Notebook","AMD A-Series A6-4455M(2.10GHz) Dual Core Processor11500GB Hard Drive, 4 GB RAM, AMD Radeon HD 7500G Graphics11HDMI Output, 720P Webcam, Up to 5 Hours of battery life!11Super Compact: 14 screen, just 1 Inch Thick.11Windows 8! No Optical Drive",null));
-list.add(new Item("Deals/20-30%/de3.jpg","Products","20-30%-3",320.0,30.0,"HP 15-p030nr 15.6-Inch Special Edition Laptop with Beats Audio (Red)","AMD A8-5545M 1.7 GHz118 GB DDR3L SDRAM111024 GB 5400 rpm Hard Drive1115.6-Inch Screen, AMD Radeon HD 8510G graphics11Windows 8.1",null));
+list.add(new Item("Deals/20-30/deal7.jpg","Products","20-30%-1",340.0,25.0,"Dell Inspiron 15 5000 Series i5547-3750sLV 15-Inch Laptop","4th Generation Intel Core i5-4210U processor118 GB DDR3 (1.7 GHz Native Clocking Speed; up to 2.7 Ghz with Turboboost)111000 GB 5400 rpm Hard Drive1115-Inch Screen11Windows 8.1",null));
+list.add(new Item("Deals/20-30/deal8.jpg","Products","20-30%-2",440.0,20.0,"Lenovo IdeaPad S405 14 Slim Notebook","AMD A-Series A6-4455M(2.10GHz) Dual Core Processor11500GB Hard Drive, 4 GB RAM, AMD Radeon HD 7500G Graphics11HDMI Output, 720P Webcam, Up to 5 Hours of battery life!11Super Compact: 14 screen, just 1 Inch Thick.11Windows 8! No Optical Drive",null));
+list.add(new Item("Deals/20-30/deal9.jpg","Products","20-30%-3",320.0,30.0,"HP 15-p030nr 15.6-Inch Special Edition Laptop with Beats Audio (Red)","AMD A8-5545M 1.7 GHz118 GB DDR3L SDRAM111024 GB 5400 rpm Hard Drive1115.6-Inch Screen, AMD Radeon HD 8510G graphics11Windows 8.1",null));
 
 // 40-60%
-list.add(new Item("Deals/40-60%/dea1.jpg","Products","40-60%-1",340.0,45.0,"Lenovo H50 Desktop (Core i3, 6 GB RAM, 1 TB HDD) 90B70019US","Intel Core i3-4160 Processor (3.6 GHz)116 GB DDR3 RAM111 TB 7200 rpm Hard Drive11Intel HD Graphics 440011Windows 8.1",null));
-list.add(new Item("Deals/40-60%/dea2.jpg","Products","40-60%-2",440.0,50.0,"Lenovo H50 Desktop (Core i7, 8 GB RAM, 1 TB HDD) 90B7005BUS","Intel Core i7-4790 Processor (3.6 GHz)118 GB DDR3 RAM111 TB 7200 rpm Hard Drive11Intel HD Graphics 440011Windows 7 Professional",null));
-list.add(new Item("Deals/40-60%/dea3.jpg","Products","40-60%-3",320.0,60.0,"Lenovo H50 Desktop (Core i5, 8 GB RAM, 1 TB HDD) 90B7000HUS","Intel Core i5-4460 Processor (3.2 GHz)118 GB DDR3 RAM111 TB 7200 rpm Hard Drive11Intel HD Graphics 440011Windows 8.1",null));
+list.add(new Item("Deals/40-60/deal4.jpg","Products","40-60%-1",340.0,45.0,"Lenovo H50 Desktop (Core i3, 6 GB RAM, 1 TB HDD) 90B70019US","Intel Core i3-4160 Processor (3.6 GHz)116 GB DDR3 RAM111 TB 7200 rpm Hard Drive11Intel HD Graphics 440011Windows 8.1",null));
+list.add(new Item("Deals/40-60/deal5.jpg","Products","40-60%-2",440.0,50.0,"Lenovo H50 Desktop (Core i7, 8 GB RAM, 1 TB HDD) 90B7005BUS","Intel Core i7-4790 Processor (3.6 GHz)118 GB DDR3 RAM111 TB 7200 rpm Hard Drive11Intel HD Graphics 440011Windows 7 Professional",null));
+list.add(new Item("Deals/40-60/deal6.jpg","Products","40-60%-3",320.0,60.0,"Lenovo H50 Desktop (Core i5, 8 GB RAM, 1 TB HDD) 90B7000HUS","Intel Core i5-4460 Processor (3.2 GHz)118 GB DDR3 RAM111 TB 7200 rpm Hard Drive11Intel HD Graphics 440011Windows 8.1",null));
 
 //upto 50%
 
-list.add(new Item("Deals/upto 50%/deal1.jpg","Products","upto 50%-1",340.0,45.0,"LG ChromeBase 22CV241-W 22-Inch All-in-One Cloud Desktop","Intel Celeron 2955U 1.4 GHz112 GB DDR3L SDRAM1116 GB Solid-State Drive1122-Inch Screen11WLAN: Wireless LAN 802.11a/b/g/n, BT Combo, LAN: 10/100/1000",null));
-list.add(new Item("Deals/upto 50%/deal2.jpg","Products","upto 50%-2",440.0,40.0,"HP Pavilion 23-g110 23-Inch All-in-One Desktop","AMD Quad-Core A6-5200 2.0 GHz Processor114.0 GB DDR3L SDRAM11500.0 GB 7200.0 rpm Hard Drive1123.0-Inch Screen, AMD Radeon HD 8400 Graphics11Windows 8.1",null));
-list.add(new Item("Deals/upto 50%/deal3.jpg","Products","upto 50%-3",320.0,30.0,"Acer Aspire AZ1-621-UR15 21.5-Inch Full HD All-in-One Desktop","Intel Celeron N2940 Quad-Core Processor (1.83 GH11114 GB DDR3 RAM11500 GB 5400 rpm Hard Drive1121.5-Inch Screen, Intel HD Graphics11Windows 8.1",null));
+list.add(new Item("Deals/upto 50/deal1.jpg","Products","upto 50%-1",340.0,45.0,"LG ChromeBase 22CV241-W 22-Inch All-in-One Cloud Desktop","Intel Celeron 2955U 1.4 GHz112 GB DDR3L SDRAM1116 GB Solid-State Drive1122-Inch Screen11WLAN: Wireless LAN 802.11a/b/g/n, BT Combo, LAN: 10/100/1000",null));
+list.add(new Item("Deals/upto 50/deal2.jpg","Products","upto 50%-2",440.0,40.0,"HP Pavilion 23-g110 23-Inch All-in-One Desktop","AMD Quad-Core A6-5200 2.0 GHz Processor114.0 GB DDR3L SDRAM11500.0 GB 7200.0 rpm Hard Drive1123.0-Inch Screen, AMD Radeon HD 8400 Graphics11Windows 8.1",null));
+list.add(new Item("Deals/upto 50/deal3.jpg","Products","upto 50%-3",320.0,30.0,"Acer Aspire AZ1-621-UR15 21.5-Inch Full HD All-in-One Desktop","Intel Celeron N2940 Quad-Core Processor (1.83 GH11114 GB DDR3 RAM11500 GB 5400 rpm Hard Drive1121.5-Inch Screen, Intel HD Graphics11Windows 8.1",null));
 
 
  return list;
