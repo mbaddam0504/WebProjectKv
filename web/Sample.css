@@ -9,6 +9,27 @@ a:visited
 #menu
 {
     display: inline-block;
+    float: left;
+    /*background-color: red;*/
+}
+table  
+{
+    width:150px;
+   
+}
+th, td {
+    width: 150px;
+}
+#totalmenu
+{
+    display: inline-block;
+   margin-left: 20%;
+   margin-right: 20%;
+   width:60%;
+   height: 20px;
+   /*border: 5px solid #0095cd;*/
+   background-color: #0095cd;
+   z-index: 100000;
 }
 table tr 
 {

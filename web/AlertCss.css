@@ -42,7 +42,7 @@
 }
 
 #alertBox #closeBtn {
-    display:block;
+    display:inline-block;
     position:relative;
     margin:5px auto;
     padding:7px;
@@ -55,8 +55,19 @@
     background-color:#357EBD;
     border-radius: 3px;
     text-decoration:none;
+    margin-left: 13%;
 }
-
+#para
+{
+    height: 22px;
+   
+    background-color: #357EBD;
+}
+h3
+{
+    text-align: center;
+    color: red;
+}
 /* unrelated styles */
 
 #mContainer {
@@ -108,4 +119,6 @@ code {
 
 code span {
     color:green;
+}.menu1 {
+
 }

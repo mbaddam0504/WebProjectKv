@@ -76,11 +76,9 @@ public static final String REALTIVE_PATH ="/";
 //    }
             PrintWriter out = response.getWriter()) {
         out.print("<!DOCTYPE html><html> <head>  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">\n" +
-                " <script src=\"slideShow.js\" type=\"text/javascript\"></script>\n" +
                 "<link rel=\"stylesheet\" type=\"text/css\" href=\"Searchstyle.css\">\n" +
+                "<link rel=\"stylesheet\" type=\"text/css\" href=\"Group6Css.css\">\n" +
                 "<link rel=\"shortcut icon\" href=\"rose.ico\" />\n" +
-                "<script src=\"MenuBarItemsScript.js\"></script>\n" +
-                "<script src=\"SingleItemScript.js\"></script>\n" +
                 " </head><body>    <div id=\"logonsearch\">\n" +
 "    <!--logo image code-->\n" +
 "    <div id=\"logo\">\n" +
@@ -94,53 +92,31 @@ public static final String REALTIVE_PATH ="/";
                 "   <ul id=\"menu\""
 //                + " onclick=\"func(event)\""
                 + ">\n" +
-                "      <li id=\"firstl\"  ><a href=\"CategoryServlet?category=Fashion\">Fashion</a> <ul>\n" +
-                "             <li><a href=\"CategoryServlet?category=Skirts\">Skirts</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=Sweaters\">Sweaters</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=dresses\">dresses</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=outerwears\">outerwears</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=pants\">pants</a></li>\n" +
+                "  <div class=\"nav\">  <li id=\"firstl\"  ><a href=\"CategoryServlet?category=Home\">Home</a> <ul>\n" +
+               
                 "             \n" +
                 "        </ul>\n" +
                 "        \n" +
                 "    </li>\n" +
-                "    <li id=\"secondl\"><a href=\"CategoryServlet?category=Sporting goods\">Sporting goods</a>\n" +
+                "    <li id=\"secondl\"><a href=\"CategoryServlet?category=Sporting goods\">Products</a>\n" +
                 "       <ul>\n" +
-                "             <li><a href=\"CategoryServlet?category=Badminton\">Badminton</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=basketball\">basketball</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=cricketbats\">cricketbats</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=golf\">golf</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=tennis\">tennis</a></li>\n" +
+                "             <li><a href=\"CategoryServlet?category=All in ones\">All in ones</a></li>\n" +
+                "             <li><a href=\"CategoryServlet?category=Desktops\">Desktops</a></li>\n" +
+                "             <li><a href=\"CategoryServlet?category=Laptops\">Laptops</a></li>\n" +
+
                 "        </ul>\n" +
                 "    </li>\n" +
-                "    <li id=\"thirdl\"><a href=\"CategoryServlet?category=Electronic goods\">Electronic goods</a>\n" +
+                "    <li id=\"thirdl\"><a href=\"CategoryServlet?category=Deals\">Deals</a>\n" +
                 "   <ul>\n" +
-                "             <li><a href=\"CategoryServlet?category=Home theater\">Home theater</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=Television\">Television</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=cameras\">cameras</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=cellphones\">cellphones</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=computers\">computers</a></li>\n" +
+                "             <li><a href=\"CategoryServlet?category=20-30\">20-30%</a></li>\n" +
+                "             <li><a href=\"CategoryServlet?category=40-60\">40-60%</a></li>\n" +
+                "             <li><a href=\"CategoryServlet?category=Upto 50\">Upto 50</a></li>\n" +
+              
                 "        </ul>    \n" +
                 "    </li>\n" +
-                "    <li id=\"fourthl\"><a href=\"CategoryServlet?category=Handbags\">Handbags</a>\n" +
-                " <ul>\n" +
-                "             <li><a href=\"CategoryServlet?category=Buckets and sacs\">Buckets and sacs</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=Crossbody bags\">Crossbody bags</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=Hobos\">Hobos</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=Satchels\">Satchels</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=wallets\">wallets</a></li>\n" +
-                "        </ul>\n" +
-                "    </li>\n" +
-                "    <li id=\"fifthl\"><a href=\"CategoryServlet?category=shoes\">shoes</a>\n" +
-                "   <ul>\n" +
-                "             <li><a href=\"CategoryServlet?category=boots\">boots</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=flats\">flats</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=outdoors\">outdoors</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=sandals\">sandals</a></li>\n" +
-                "             <li><a href=\"CategoryServlet?category=slippers\">slippers</a></li>\n" +
-                "        </ul>\n" +
-                "    </li>\n" +
-                "</ul>\n" +
+                  "    <li id=\"thirdl\"><a href=\"CategoryServlet?category=Support\">Support</a></li>\n" +
+             
+                "</ul> </div>\n" +
                 " <div id=\"bar\">\n" +
                 "   Welcome TO Shopping\n" +
                 " </div>\n" +

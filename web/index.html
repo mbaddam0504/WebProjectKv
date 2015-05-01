@@ -4,25 +4,27 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <!-- For intranet testing only, remove in production. -->
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-   <script src="slideShow.js"></script>
 <link rel="stylesheet" type="text/css" href="Searchstyle.css">
 <link rel="shortcut icon" href="rose1.ico" />
+<link rel="stylesheet" type="text/css" href="Group6Css.css"/>
+
 </head>
 <body>
     <div id="logonsearch">
     <!--logo image code-->
     <div id="logo">
-        <a href="index.html"> <img src="logo/logofinal.png" alt="GoNClick" /></a>
+         <a href="index.html"> <img src="logo/group6.jpg" alt="Vihaka" /></a>
     </div>
   <!--Search Bar Code-->
 	<div id="tfheader">
 		<form id="tfnewsearch" method="get" action="ItemServlet">
-                    <input type="text" class="tftextinput" name="search" size="21" maxlength="120" placeholder="Search here">
+                    <input type="text" class="tftextinput" name="search" size="60" maxlength="120" placeholder="Search here">
                         <input type="submit" value="search" class="tfbutton">
 		</form>
 	</div>
   <!--menu bar code-->
-</div>
+</div >
+<div class="nav">
   <ul id="menu" >
       <li id="firstl"  ><a href="CategoryServlet?category=Home">Home</a>
    <ul>    </ul>
@@ -30,40 +32,26 @@
     </li>
     <li id="secondl"><a href="CategoryServlet?category=Products">Products</a>
    <ul>
-             <li><a href="CategoryServlet?category=Badminton">All in ones</a></li>
-             <li><a href="CategoryServlet?category=basketball">Desktops</a></li>
-             <li><a href="CategoryServlet?category=cricketbats">Laptops</a></li>
+             <li><a href="CategoryServlet?category=All in ones">All in ones</a></li>
+             <li><a href="CategoryServlet?category=Desktops">Desktops</a></li>
+             <li><a href="CategoryServlet?category=Laptops">Laptops</a></li>
         </ul>
     </li>
     <li id="thirdl"><a href="CategoryServlet?category=Deals">Deals</a>
    <ul >
-             <li><a href="CategoryServlet?category=20-30%">20-30%</a></li>
-             <li><a href="CategoryServlet?category=Television">40-60%</a></li>
-             <li><a href="CategoryServlet?category=cameras">cameras</a></li>
-             <li><a href="CategoryServlet?category=cellphones">cellphones</a></li>
-             <li><a href="CategoryServlet?category=computers">computers</a></li>
-        </ul>    
-    </li>
-    <li id="fourthl"><a href="CategoryServlet?category=Handbags">Handbags</a>
-   <ul >
-             <li><a href="CategoryServlet?category=Buckets and sacs">Buckets and sacs</a></li>
-             <li><a href="CategoryServlet?category=Crossbody bags">Crossbody bags</a></li>
-             <li><a href="CategoryServlet?category=Hobos">Hobos</a></li>
-             <li><a href="CategoryServlet?category=Satchels">Satchels</a></li>
-             <li><a href="CategoryServlet?category=wallets">wallets</a></li>
-        </ul>    
-    </li>
-    <li id="fifthl"><a href="CategoryServlet?category=shoes">shoes</a>
-   <ul >
-             <li><a href="CategoryServlet?category=boots">boots</a></li>
-             <li><a href="CategoryServlet?category=flats">flats</a></li>
-             <li><a href="CategoryServlet?category=outdoors">outdoors</a></li>
-             <li><a href="CategoryServlet?category=sandals">sandals</a></li>
-             <li ><a href="PaymentServlet?category=slippers" name="category">slippers</a></li>
-        </ul>
-    </li>
+             <li><a href="CategoryServlet?category=20-30">20-30%</a></li>
+             <li><a href="CategoryServlet?category=40-60">40-60%</a></li>
+             <li><a href="CategoryServlet?category=Upto 50">Upto 50</a></li>
 
+        </ul>    
+    </li>
+    <li id="fourthl"><a href="CategoryServlet?category=Support">Support</a>
+   <ul >
+             
+        </ul>    
+    </li>
 </ul>
+</div>
 
  <div id="bar">
    Welcome TO Shopping
@@ -71,20 +59,11 @@
   <div id="discount">
       <a href="CategoryServlet?category=discount" > <img src="images/sale51.jpg" alt="saleimg" name="category1" ></a>
   </div>
-<div id="slideShowImages" >
-    <ul style="list-style-type: none " onclick="slideImageFunc1(event)">
-        <li>   <a href="#" > <img  src="images/jewelry.jpg" alt="Slide 1" /></a>
-   <a href="#">  <img   src="images/camera.jpg" alt="Slide 3"/></a>
- <a href="#">  <img src="images/watch.jpg" alt="Slide 4"    /></a>
-    <a href="#"> <img src="images/makeup.jpg" alt="Slide 5"   /></a>
-    <a href="#" > <img src="images/sports.jpg" alt="Slide 6"   /></a>
-</ul>      
-</div>
-  <div id="footer">
+<!--  <div id="footer">
       Contact Us At +15467324567
                         @GoNClick. All rights reserved
 
-  </div>
+  </div>-->
 </body>
 
 </html>

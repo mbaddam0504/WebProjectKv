@@ -7,10 +7,13 @@
    <script src="SampleScript.js"></script>
 <link rel="stylesheet" type="text/css" href="Sample.css">
 <link rel="shortcut icon" href="rose1.ico" />
+<link rel="stylesheet" href="AlertCss.css" type="text/css">
+
 </head>
 <body>
-    <table id="menu">
-           <thead><tr><td><a href="CategoryServlet?category=Fashion">Fashion world</a></td></tr> </thead>      
+    <div id="totalmenu">
+    <table  id="menu" class="menu1" onmouseover="display('menu1');" onmouseout="disappear('menu1')" >
+        <tr><th ><a href="CategoryServlet?category=Fashion">Fashion</a></th></tr>     
          <tr>   <td><a href="CategoryServlet?category=Skirts">Skirts</a></td> </tr>
          <tr>    <td><a href="CategoryServlet?category=Sweaters">Sweaters</a></td> </tr>
           <tr>   <td><a href="CategoryServlet?category=dresses">dresses</a></td> </tr>
@@ -20,25 +23,51 @@
         </table>
    
 
-  <table id="menu">
-         <thead><tr> <td><a href="CategoryServlet?category=Fashion">Fashion busy</a></td></tr> </thead>
+  <table id="menu" class="menu2"  onmouseover="display('menu2');" onmouseout="disappear('menu2')">
+        <tr><th><a href="CategoryServlet?category=Sporting goods">Sporting goods</a></th></tr>     
 
-         <tr>   <td><a href="CategoryServlet?category=Skirts">Skirts</a></td> </tr>
-         <tr>    <td><a href="CategoryServlet?category=Sweaters">Sweaters</a></td> </tr>
-          <tr>   <td><a href="CategoryServlet?category=dresses">dresses</a></td> </tr>
-          <tr>   <td><a href="CategoryServlet?category=outerwears">outerwears</a></td> </tr>
-         <tr>    <td><a href="CategoryServlet?category=pants">pants</a></td> </tr>
+         <tr>   <td><a href="CategoryServlet?category=Badminton">Badminton</a></td> </tr>
+         <tr>    <td><a href="CategoryServlet?category=basketball">basketball</a></td> </tr>
+          <tr>   <td><a href="CategoryServlet?category=cricketbats">cricketbats</a></td> </tr>
+          <tr>   <td><a href="CategoryServlet?category=tennis">tennis</a></td> </tr>
+         <tr>    <td><a href="CategoryServlet?category=golf">golf</a></td> </tr>
             
         </table>
-     <table id="menu">
-         <thead><tr> <td><a href="CategoryServlet?category=Fashion">Fashion</a></td></tr> </thead>
-         <tr>   <td><a href="CategoryServlet?category=Skirts">Skirts</a></td> </tr>
-         <tr>    <td><a href="CategoryServlet?category=Sweaters">Sweaters</a></td> </tr>
-          <tr>   <td><a href="CategoryServlet?category=dresses">dresses</a></td> </tr>
+   
+           <table id="menu"  class="menu3" onmouseover="display('menu3');" onmouseout="disappear('menu3')">
+                 <tr><th ><a href="CategoryServlet?category=Fashion">Electronic goods </a></th></tr>     
+
+         <tr>   <td><a href="CategoryServlet?category=Home theater">Home theater</a></td> </tr>
+         <tr>    <td><a href="CategoryServlet?category=cameras">cameras</a></td> </tr>
+          <tr>   <td><a href="CategoryServlet?category=cellphones">cellphones</a></td> </tr>
           <tr>   <td><a href="CategoryServlet?category=outerwears">outerwears</a></td> </tr>
-         <tr>    <td><a href="CategoryServlet?category=pants">pants</a></td> </tr>
+         <tr>    <td><a href="CategoryServlet?category=computers">computers</a></td> </tr>
             
         </table>
+    
+           <table id="menu"  class="menu4" onmouseover="display('menu4');" onmouseout="disappear('menu4')">
+                 <tr><th ><a href="CategoryServlet?category=Handbags">Handbags </a></th></tr>     
+
+         <tr>   <td><a href="CategoryServlet?category=Buckets and sacs">Buckets and sacs</a></td> </tr>
+         <tr>    <td><a href="CategoryServlet?category=Crossbody bags">Crossbody bags</a></td> </tr>
+          <tr>   <td><a href="CategoryServlet?category=Hobos">Hobos</a></td> </tr>
+          <tr>   <td><a href="CategoryServlet?category=Satchels">Satchels</a></td> </tr>
+         <tr>    <td><a href="CategoryServlet?category=wallets">wallets</a></td> </tr>
+            
+        </table>
+              <table id="menu"  class="menu5" onmouseover="display('menu5');" onmouseout="disappear('menu5')">
+                 <tr><th ><a href="CategoryServlet?category=Fashion">shoes </a></th></tr>     
+
+         <tr>   <td><a href="CategoryServlet?category=Skirts">boots</a></td> </tr>
+         <tr>    <td><a href="CategoryServlet?category=Sweaters">flats</a></td> </tr>
+          <tr>   <td><a href="CategoryServlet?category=dresses">outdoors</a></td> </tr>
+          <tr>   <td><a href="CategoryServlet?category=outerwears">sandals</a></td> </tr>
+         <tr>    <td><a href="CategoryServlet?category=slippers">slippers</a></td> </tr>
+            
+        </table>
+        </div>
+    
+   
 </body>
 
 </html>

@@ -2,10 +2,13 @@
         width:100%;
         margin-left: 31%;
         margin-right: 30%;
+        margin-top: 1px;
+/*        display: inline-block;
+        float: left;*/
     }
 .nav ul {list-style:none;margin:0;padding:0}
 .nav li {float:left; width:100px; background-color:green; text-align:center;font-size: 96%; 
-          border-right:1px solid white;position:relative;
+          border-right:1px solid white;position:relative; list-style:none;
           height:30px;line-height:30px;}
 .nav li ul li {float:none;width:96%;text-allign:left;padding-left:5px;
            border-top:1px solid white;}
@@ -19,10 +22,10 @@
 body{
     background-image:url("yellow.jpg");
 }
-#logo{
+/*#logo{
     margin-left:31%;
     margin-right:10%;
-}
+}*/
 #one , #two , #three
 {
     display: inline-block;

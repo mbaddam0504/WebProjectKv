@@ -22,11 +22,10 @@ function createCustomAlert(txt) {
     alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
     alertObj.style.visiblity="visible";
 
-    h1 = alertObj.appendChild(d.createElement("h1"));
-    h1.appendChild(d.createTextNode(ALERT_TITLE));
+    div2 = alertObj.appendChild(d.createElement("div"));
+        div2.id="para";
 
-    msg = alertObj.appendChild(d.createElement("p"));
-    //msg.appendChild(d.createTextNode(txt));
+    msg = alertObj.appendChild(d.createElement("h3"));
     msg.innerHTML = txt;
 
     btn = alertObj.appendChild(d.createElement("a"));
@@ -36,7 +35,12 @@ function createCustomAlert(txt) {
     btn.focus();
     btn.onclick = function() { window.location.href="index.html";};
         //removeCustomAlert();return false; }
-
+    btn = alertObj.appendChild(d.createElement("a"));
+    btn.id = "closeBtn";
+    btn.appendChild(d.createTextNode("CANCEL"));
+    btn.href = "#";
+    btn.focus();
+    btn.onclick = function() { window.location.href="Test.html";};
     alertObj.style.display = "block";
 
 }
