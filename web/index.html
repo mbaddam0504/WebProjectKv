@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="Searchstyle.css">
 <link rel="shortcut icon" href="rose1.ico" />
 <link rel="stylesheet" type="text/css" href="Group6Css.css"/>
+   <script src="slideShow.js"></script>
 
 </head>
 <body>
@@ -18,7 +19,8 @@
   <!--Search Bar Code-->
 	<div id="tfheader">
 		<form id="tfnewsearch" method="get" action="ItemServlet">
-                    <input type="text" class="tftextinput" name="search" size="60" maxlength="120" placeholder="Search here">
+                    <a href="index.html"></a>
+                    <input type="text" class="tftextinput" name="search" size="20" maxlength="120" placeholder="Search here">
                         <input type="submit" value="search" class="tfbutton">
 		</form>
 	</div>
@@ -52,13 +54,15 @@
     </li>
 </ul>
 </div>
-
- <div id="bar">
-   Welcome TO Shopping
- </div>
-  <div id="discount">
-      <a href="CategoryServlet?category=discount" > <img src="images/sale51.jpg" alt="saleimg" name="category1" ></a>
-  </div>
+<div id="slideShowImages" >
+    <ul style="list-style-type: none " onclick="slideImageFunc1(event)">
+        <li>   <a href="#" > <img  src="images/jewelry.jpg" alt="Slide 1" /></a>
+   <a href="#">  <img   src="images/camera.jpg" alt="Slide 3"/></a>
+ <a href="#">  <img src="images/watch.jpg" alt="Slide 4"    /></a>
+    <a href="#"> <img src="images/makeup.jpg" alt="Slide 5"   /></a>
+    <a href="#" > <img src="images/sports.jpg" alt="Slide 6"   /></a>
+</ul>      
+</div>
 <!--  <div id="footer">
       Contact Us At +15467324567
                         @GoNClick. All rights reserved
